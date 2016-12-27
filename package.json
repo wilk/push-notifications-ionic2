@@ -36,9 +36,12 @@
     "cordova-plugin-statusbar",
     "cordova-plugin-device",
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    "cordova-plugin-network-information",
+    "cordova-plugin-push"
   ],
   "cordovaPlatforms": [
+    "android",
     "ios",
     {
       "platform": "ios",

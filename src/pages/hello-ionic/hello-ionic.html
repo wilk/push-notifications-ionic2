@@ -9,17 +9,25 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="address" placeholder="Registration backend IP (e.g.: http://123.111.22.33:3001)"></ion-input>
+    </ion-item>
+  </ion-list>
 
-  <h3>Welcome to your first Ionic app!</h3>
+  <div padding>
+    <button (click)="register(address)" [disabled]="disabled" ion-button color="primary" block>Register</button>
+  </div>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
+  <h1>Push Notifications Status</h1>
+  <div>{{message}}</div>
 
+  <h1>Notifications</h1>
+
+  <ion-list>
+    <ion-item ion-item *ngFor="let notification of notifications">
+      <div><b>{{notification.title}}</b></div>
+      <div>{{notification.message}}</div>
+    </ion-item>
+  </ion-list>
 </ion-content>
