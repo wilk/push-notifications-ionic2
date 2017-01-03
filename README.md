@@ -9,6 +9,7 @@ List of requirements:
  * Android SDK
  * Cordova 6+
  * Ionic 2+
+ * Typescript 2+
 
 ## Installation
 Just use NPM and Ionic:
